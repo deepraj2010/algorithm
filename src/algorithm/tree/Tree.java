@@ -20,7 +20,15 @@ public class Tree {
         return node;
     }
     
-    public void delete(int k) {
+    public Node getRoot() {
+		return root;
+	}
+
+	public void setRoot(Node root) {
+		this.root = root;
+	}
+
+	public void delete(int k) {
         if (isEmpty())
             System.out.println("Tree Empty");
         else if (search(k) == false)

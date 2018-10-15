@@ -24,17 +24,14 @@ public class AddOneToLinkedlist {
 	}
 	
 	public static int addOne(Node node) {
-		if(node == null) {
+		if(node == null)
 			return 1;
-		}
-		int result = addOne(node.getNext());
-		int nodeData = node.getData() + result;
-		if(nodeData >=10) {
+
+		int nodeData = node.getData() + addOne(node.getNext());
+		if(nodeData >=10)
 			node.setData(nodeData%10);
-			return nodeData/10;
-		} else {
+		else
 			node.setData(nodeData);
-			return 0;
-		}
+		return nodeData/10;
 	}
 }
