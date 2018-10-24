@@ -1,17 +1,17 @@
 package algorithm.linkedlist.problems;
 
-import algorithm.linkedlist.list.LinkedList;
+import algorithm.linkedlist.list.LinkList;
 import algorithm.linkedlist.list.Node;
 
 public class AddOneToLinkedlist {
 
 	public static void main(String[] args) {
-		LinkedList list = new LinkedList();
+		LinkList list = new LinkList();
 		
-		list.insert(4);
-		list.insert(8);
-		list.insert(5);
-		list.insert(9);
+		list.insert(1);
+		list.insert(0);
+		list.insert(0);
+		list.insert(0);
 		list.printList();
 		System.out.println();
 		int carry = addOne(list.getHead());

@@ -152,6 +152,20 @@ public class Tree {
             postorder(root.getRight());
             System.out.print(root.getData() +" ");
         }
-    }     
+    }
+    
+    public int height() {
+    	return height(root);
+    }
+    
+	private int height(Node root) {
+		if(root == null) {
+			return 0;
+		}
+		if(root.getLeft() == null && root.getRight() == null) {
+			return 1;
+		}
+		return Math.max(height(root.getLeft()), height(root.getRight())) + 1;
+	}
 
 }

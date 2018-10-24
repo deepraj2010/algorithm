@@ -1,6 +1,6 @@
 package algorithm.linkedlist.list;
 
-public class LinkedList {
+public class LinkList {
 	
 	private Node head;
 	

@@ -1,14 +1,13 @@
 package algorithm.linkedlist.problems;
 
-import algorithm.linkedlist.list.LinkedList;
+import algorithm.linkedlist.list.LinkList;
 import algorithm.linkedlist.list.Node;
 
 public class MergeLinkedList {
 	
 	public static void main(String args[]) {
-		LinkedList firstList = new LinkedList();
+		LinkList firstList = new LinkList();
 		firstList.insert(2);
-		firstList.insert(4);
 		firstList.insert(6);
 		firstList.insert(8);
 		firstList.insert(10);
@@ -19,7 +18,7 @@ public class MergeLinkedList {
 		firstList.printList();
 		System.out.println();
 		
-		LinkedList secondList = new LinkedList();
+		LinkList secondList = new LinkList();
 		secondList.insert(1);
 		secondList.insert(3);
 		secondList.insert(5);
@@ -40,9 +39,7 @@ public class MergeLinkedList {
 	//	System.out.println();
 		firstList.setHead(nodeRecursive);
 		firstList.printList();
-		System.out.println();
-
-		
+		System.out.println();	
 	}
 	
 	public static Node merge(Node firstList, Node secondList) {

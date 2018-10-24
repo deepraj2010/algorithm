@@ -1,6 +1,6 @@
 package algorithm.linkedlist.problems;
 
-import algorithm.linkedlist.list.LinkedList;
+import algorithm.linkedlist.list.LinkList;
 import algorithm.linkedlist.list.Node;
 
 /**
@@ -40,7 +40,7 @@ Output:
 public class RearrangeLinkedList {
 
 	public static void main(String[] args) {
-		LinkedList list = new LinkedList();
+		LinkList list = new LinkList();
 		list.insert(1);
 		list.insert(2);
 		list.insert(3);
