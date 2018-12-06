@@ -20,6 +20,16 @@ public class Tree {
         return node;
     }
     
+    public int getHeight() {
+    	return getHeight(root, 0);
+    }
+        
+    private int getHeight(Node node, int height) {
+        if (node == null)
+            return height;
+        return 1+Math.max(getHeight(node.getLeft(), height), getHeight(node.getRight(), height));
+    }
+    
     public Node getRoot() {
 		return root;
 	}

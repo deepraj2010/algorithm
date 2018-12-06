@@ -10,7 +10,7 @@ public class ReverseLinkedlist {
 		list.insert(1);
 		list.insert(2);
 		list.insert(3);
-//		list.insert(4);
+		list.insert(4);
 		list.printList();
 		System.out.println();
 		Node newRoot = reverseRecursively(list.getHead());
